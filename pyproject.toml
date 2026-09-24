@@ -2,7 +2,7 @@
 name = "penalty-scout"
 version = "0.1.0"
 requires-python = ">=3.10"
-dependencies = []
+dependencies = ["ultralytics"]
 
 [project.optional-dependencies]
 dev = ["pytest"]
@@ -16,3 +16,4 @@ where = ["src"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+markers = ["integration: slow tests that load real models"]
